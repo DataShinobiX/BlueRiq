@@ -1,0 +1,1 @@
+Setup for blueriq project
