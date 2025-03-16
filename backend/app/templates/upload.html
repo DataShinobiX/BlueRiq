@@ -1,14 +1,17 @@
-<!-- backend/app/templates/upload.html -->
 <!DOCTYPE html>
 <html>
 <head>
     <title>Upload Document</title>
 </head>
 <body>
+    <h1>Upload Document</h1>
     <form method="post" enctype="multipart/form-data">
         {% csrf_token %}
         <input type="file" name="document">
         <button type="submit">Upload</button>
     </form>
+    {% if uploaded_file_url %}
+        <p>Document highlighted successfully: <a href="{{ uploaded_file_url }}">{{ uploaded_file_url }}</a></p>
+    {% endif %}
 </body>
 </html>
