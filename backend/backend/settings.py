@@ -40,7 +40,11 @@ INSTALLED_APPS = [
     'app',
     'django_plotly_dash.apps.DjangoPlotlyDashConfig',
     'dpd_static_support',
-    'channels' 
+    'app',              # your existing frontend
+    'frontend',         # your new Dash app
+    'django_plotly_dash.apps.DjangoPlotlyDashConfig',
+    'dpd_static_support',
+    'channels',
 ]
 
 MIDDLEWARE = [
