@@ -57,6 +57,29 @@ MIDDLEWARE = [
     'django_plotly_dash.middleware.ExternalRedirectionMiddleware',
 ]
 
+PLOTLY_DASH = {
+    "ws_route": "dpd/ws",  # default
+    "insert_demo_migrations": False,
+    "cache_arguments": True,
+    "http_poke_enabled": True,
+    "http_poke_endpoint": "dpd/views",
+    "serve_locally": True,
+    "cdn_url": "",
+    "expose_plotly_backend": False,
+    "middleware_mode": True,
+    "demo_mode": False,
+    "run_server": False,
+    "DPD_WEBSOCKETS_ENABLED": False,  # Disable websockets
+}
+
+STATICFILES_FINDERS = [
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+    'django_plotly_dash.finders.DashAssetFinder',
+    'django_plotly_dash.finders.DashComponentFinder',
+]
+
+
 ROOT_URLCONF = 'backend.urls'
 
 TEMPLATES = [
