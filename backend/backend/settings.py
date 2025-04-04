@@ -37,15 +37,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'app',
-    'django_plotly_dash.apps.DjangoPlotlyDashConfig',
-    'dpd_static_support',
-    'app',              # your existing frontend
-    'frontend',         # your new Dash app
+    'app',                                        
     'django_plotly_dash.apps.DjangoPlotlyDashConfig',
     'dpd_static_support',
     'channels',
+    'frontend.apps.FrontendConfig',
 ]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

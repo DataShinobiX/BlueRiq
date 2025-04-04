@@ -16,8 +16,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
+from frontend.views import dashboard_view
+
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('app/', include('app.urls')),
+    path('dashboard/', dashboard_view),  
+    path('django_plotly_dash/', include('django_plotly_dash.urls')),
 ]
+
+
