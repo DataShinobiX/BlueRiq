@@ -1,0 +1,7 @@
+Django>=4.0
+pdfminer.six>=20221105
+PyMuPDF>=1.22.0
+spacy>=3.6.0
+
+# Dutch language model (small)
+nl-core-news-sm @ https://github.com/explosion/spacy-models/releases/download/nl_core_news_sm-3.6.0/nl_core_news_sm-3.6.0-py3-none-any.whl
