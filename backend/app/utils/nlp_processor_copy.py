@@ -88,3 +88,9 @@ def categorize_sentences(text):
         "external_sources": external_sources,
         "entities": {label: list(vals) for label, vals in entities.items()}
     }
+
+
+def extract_policy_insights(pdf_path):
+    text = extract_text_from_pdf(pdf_path)
+    categorized_data = categorize_sentences(text)
+    return categorized_data
