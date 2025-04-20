@@ -42,13 +42,6 @@
             {% endfor %}
         </ul>
 
-        <h3>Entities (Paars 💜):</h3>
-        <ul>
-            {% for label, items in entities.items %}
-                <li><strong>{{ label }}</strong>: {{ items|join:", " }}</li>
-            {% endfor %}
-        </ul>
-
         <h3>🏷️ Named Entities</h3>
         {% for label, values in entities.items %}
             <strong>{{ label }}</strong>:

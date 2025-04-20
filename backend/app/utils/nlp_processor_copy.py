@@ -63,10 +63,6 @@ def categorize_sentences(text):
         if re.search(r"\b(Onderstreept|artikel)\b", sentence, re.IGNORECASE):
             external_sources.append(sentence)
 
-        # Named Entity Recognition (Paars 💜)
-        for ent in sent.ents:
-            entities[ent.label_].add(ent.text)
-
     return {
         "rules": rules,
         "definitions": definitions,
