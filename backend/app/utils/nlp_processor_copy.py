@@ -43,25 +43,43 @@ def categorize_sentences(text):
     external_sources = []
     entities = defaultdict(set)
 
+    categorized_sentences = set()  # To track sentences that have already been categorized
+
     doc = nlp(text)
     for sent in doc.sents:
         sentence = sent.text.strip()
 
+        # Skip if the sentence is already categorized
+        if sentence in categorized_sentences:
+            continue
+
         # Rule Detection (Geel 🟡)
         if re.search(r"\b(Kan|Mag|Moet|In het geval dat|Als dan-constructie|Dient|Geldend van)\b", sentence, re.IGNORECASE):
             rules.append(sentence)
+            categorized_sentences.add(sentence)
+            continue
 
         # Definitions (Blauw 🔵)
         if re.search(r"\b(Is|Het geval)\b", sentence, re.IGNORECASE):
             definitions.append(sentence)
+            categorized_sentences.add(sentence)
+            continue
 
         # Exceptions (Groen 🟢)
         if re.search(r"\b(Indien|Alsnog|Niet|Geval)\b", sentence, re.IGNORECASE):
             exceptions.append(sentence)
+            categorized_sentences.add(sentence)
+            continue
 
         # External Sources (Grijs 🩶)
         if re.search(r"\b(Onderstreept|artikel)\b", sentence, re.IGNORECASE):
             external_sources.append(sentence)
+            categorized_sentences.add(sentence)
+            continue
+
+        # Named Entity Recognition (NER)
+        for ent in sent.ents:
+            entities[ent.label_].add(ent.text)
 
     return {
         "rules": rules,
@@ -70,9 +88,3 @@ def categorize_sentences(text):
         "external_sources": external_sources,
         "entities": {label: list(vals) for label, vals in entities.items()}
     }
-
-
-def extract_policy_insights(pdf_path):
-    text = extract_text_from_pdf(pdf_path)
-    categorized_data = categorize_sentences(text)
-    return categorized_data
