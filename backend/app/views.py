@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.core.files.storage import FileSystemStorage
-from .utils.nlp_processor import extract_policy_insights
+from .utils.nlp_processor_copy import extract_policy_insights
 
 
 def upload_document(request):
@@ -15,6 +15,9 @@ def upload_document(request):
         return render(request, 'upload.html', {
             'filename': filename,
             'rules': insights.get('rules', []),
+            'definitions': insights.get('definitions', []),
+            'exceptions': insights.get('exceptions', []),
+            'external_sources': insights.get('external_sources', []),
             'entities': insights.get('entities', {})
         })
 

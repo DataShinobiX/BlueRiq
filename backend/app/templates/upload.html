@@ -14,10 +14,38 @@
     {% if filename %}
         <h2>Uploaded: {{ filename }}</h2>
 
-        <h3>⚖️ Detected Rules</h3>
+        <h3>Rules (Geel 🟡):</h3>
         <ul>
             {% for rule in rules %}
                 <li>{{ rule }}</li>
+            {% endfor %}
+        </ul>
+
+        <h3>Definitions (Blauw 🔵):</h3>
+        <ul>
+            {% for definition in definitions %}
+                <li>{{ definition }}</li>
+            {% endfor %}
+        </ul>
+
+        <h3>Exceptions (Groen 🟢):</h3>
+        <ul>
+            {% for exception in exceptions %}
+                <li>{{ exception }}</li>
+            {% endfor %}
+        </ul>
+
+        <h3>External Sources (Grijs 🩶):</h3>
+        <ul>
+            {% for source in external_sources %}
+                <li>{{ source }}</li>
+            {% endfor %}
+        </ul>
+
+        <h3>Entities (Paars 💜):</h3>
+        <ul>
+            {% for label, items in entities.items %}
+                <li><strong>{{ label }}</strong>: {{ items|join:", " }}</li>
             {% endfor %}
         </ul>
 

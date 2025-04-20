@@ -2,7 +2,7 @@ import fitz  # PyMuPDF
 from transformers import pipeline
 import json
 
-nlp = pipeline("ner", model="xlm-roberta-base", tokenizer="xlm-roberta-base") # Named Entity Recognition pretrained model
+nlp = pipeline("fill-mask", model="GroNLP/bert-base-dutch-cased") 
 
 def load_domain_rules(domain):
     with open('path/to/domain_rules.json') as f:
