@@ -35,6 +35,7 @@ def extract_text_from_pdf(pdf_path):
     logger.debug("Extracted text from %s: %s", pdf_path, text)
     return text
 
+#test
 
 def categorize_sentences(text):
     rules = []
