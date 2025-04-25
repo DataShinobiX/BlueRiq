@@ -39,18 +39,43 @@ def extract_text_from_pdf(pdf_path):
 
 def categorize_sentences(text):
     rules = []
+    definitions = []
+    exceptions = []
+    external_sources = []
     entities = defaultdict(set)
 
     doc = nlp(text)
-    for sent in doc.sents:
-        sentence = sent.text.strip()
+    sentences = list(doc.sents)
+    
+    # Process sentences in pairs to catch if-then constructions across sentences
+    for i in range(len(sentences)):
+        current_sent = sentences[i].text.strip()
+        next_sent = sentences[i + 1].text.strip() if i + 1 < len(sentences) else ""
+        
+        # Check for if-then pattern within single sentence
+        if re.search(r"\b(is|als|indien|wanneer|mits|in het geval dat)\b.*\b(dan|wordt|is|geldt|moet|dient|kan|mag)\b", current_sent, re.IGNORECASE):
+            rules.append(current_sent)
+        
+        # Check for if-then pattern across two sentences
+        elif re.search(r"\b(is|als|indien|wanneer|mits|in het geval dat)\b", current_sent, re.IGNORECASE) and \
+             re.search(r"\b(dan|wordt|is|geldt|moet|dient|kan|mag)\b", next_sent, re.IGNORECASE):
+            rules.append(f"{current_sent} {next_sent}")
+        
+        # Rule detection
+        elif re.search(r"\b(kan|mag|moet|in het geval dat|dient|geldend van|hebben recht op)\b", current_sent, re.IGNORECASE):
+            rules.append(current_sent)
 
-        # Rule Detection based on common verbs
-        if re.search(r"\b(moet|dient|verplicht|mag niet|is verplicht|zijn verboden)\b", sentence, re.IGNORECASE):
-            rules.append(sentence)
+        if re.search(r"\b(is|het geval|=)\b", current_sent, re.IGNORECASE):
+            definitions.append(current_sent)
+
+        if re.search(r"\b(indien|alsnog|niet|geval|maar)\b", current_sent, re.IGNORECASE):
+            exceptions.append(current_sent)
+
+        if re.search(r"\b(artikel|wetvoorstel|wet)\b", current_sent, re.IGNORECASE):
+            external_sources.append(current_sent)
 
         # Named Entity Recognition
-        for ent in sent.ents:
+        for ent in sentences[i].ents:
             entities[ent.label_].add(ent.text)
 
     return rules, {label: list(vals) for label, vals in entities.items()}
