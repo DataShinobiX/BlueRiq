@@ -30,6 +30,33 @@
                 {% endfor %}
             </ul>
         {% endfor %}
+
+        <h3>📖 Definitions</h3>
+        <ul>
+            {% for definition in definitions %}
+                <li>{{ definition }}</li>
+            {% endfor %}
+        </ul>
+
+        <h3>⚡ Exceptions</h3>
+        <ul>
+            {% for exception in exceptions %}
+                <li>{{ exception }}</li>
+            {% endfor %}
+        </ul>
+
+        <h3>🔗 External Sources</h3>
+        <ul>
+            {% for source in external_sources %}
+                <li>{{ source }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+    {% if highlighted_pdf_url %}
+    <h2>📄 Download Highlighted PDF</h2>
+    <a href="{{ highlighted_pdf_url }}" download>
+        <button>Download Highlighted PDF</button>
+    </a>
     {% endif %}
 </body>
 </html>

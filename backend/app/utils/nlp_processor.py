@@ -35,7 +35,6 @@ def extract_text_from_pdf(pdf_path):
     logger.debug("Extracted text from %s: %s", pdf_path, text)
     return text
 
-#test
 
 def categorize_sentences(text):
     rules = []
@@ -47,7 +46,6 @@ def categorize_sentences(text):
     doc = nlp(text)
     sentences = list(doc.sents)
     
-    # Process sentences in pairs to catch if-then constructions across sentences
     for i in range(len(sentences)):
         current_sent = sentences[i].text.strip()
         next_sent = sentences[i + 1].text.strip() if i + 1 < len(sentences) else ""
@@ -78,13 +76,52 @@ def categorize_sentences(text):
         for ent in sentences[i].ents:
             entities[ent.label_].add(ent.text)
 
-    return rules, {label: list(vals) for label, vals in entities.items()}
+    return rules, {label: list(vals) for label, vals in entities.items()}, definitions, exceptions, external_sources
+
+def highlight_pdf(input_pdf_path, output_pdf_path, categorized_data):
+    doc = fitz.open(input_pdf_path)
+
+    color_map = {
+        "rules": (1, 1, 0),           # Yellow
+        "entities": (0.5, 0.8, 1),    # Light Blue
+        "definitions": (0.8, 1, 0.8), # Light Green
+        "exceptions": (1, 0.6, 0.6),  # Light Coral
+        "external_sources": (0.8, 0.6, 1) # Plum
+    }
+
+    def highlight_terms(terms, color_rgb):
+        for page in doc:
+            for term in terms:
+                if not term.strip():  # Skip empty
+                    continue
+                text_instances = page.search_for(term, quads=False)  # Simple search
+                for inst in text_instances:
+                    highlight = page.add_highlight_annot(inst)
+                    highlight.set_colors(stroke=color_rgb)
+                    highlight.update()
+
+    # Highlight per category
+    highlight_terms(categorized_data.get("rules", []), color_map["rules"])
+
+    for entity_list in categorized_data.get("entities", {}).values():
+        highlight_terms(entity_list, color_map["entities"])
+
+    highlight_terms(categorized_data.get("definitions", []), color_map["definitions"])
+    highlight_terms(categorized_data.get("exceptions", []), color_map["exceptions"])
+    highlight_terms(categorized_data.get("external_sources", []), color_map["external_sources"])
+
+    doc.save(output_pdf_path)
+    doc.close()
+
 
 
 def extract_policy_insights(pdf_path):
     text = extract_text_from_pdf(pdf_path)
-    rules, entities = categorize_sentences(text)
+    rules, entities, definitions, exceptions, external_sources = categorize_sentences(text)
     return {
         "rules": rules,
-        "entities": entities
+        "entities": entities,
+        "definitions": definitions,
+        "exceptions": exceptions,
+        "external_sources": external_sources
     }
