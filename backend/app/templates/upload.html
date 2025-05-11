@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Upload Policy Document</title>
+    {% load static %}
+    <title>Blueriq - PolicyIQ</title>
+    <link rel="icon" href="{% static 'favicon.png' %}" type="image/png">
     <style>
         body {
             margin: 0;
@@ -40,6 +42,13 @@
         input[type="file"] {
             display: block;
             margin-bottom: 10px;
+            background-color: #2c2c2c;
+            color: #fff;
+            border: 1px solid #444;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
         }
         button {
             background-color: #2c8cff;
@@ -67,7 +76,8 @@
     <div id="app-container">
         {% if user.is_authenticated %}
             <div id="logout-container">
-                <form action="{% url 'logout' %}" method="post">
+                <span>Logged in as {{ user.username }}</span>
+                <form action="{% url 'logout' %}" method="post" style="display: inline;">
                     {% csrf_token %}
                     <button type="submit">Logout</button>
                 </form>
@@ -80,7 +90,7 @@
 
         <!-- Main Content Area -->
         <div id="right-column">
-            <h1>Upload a Dutch Policy PDF</h1>
+            <h1>Upload a Policy PDF</h1>
             <form method="POST" enctype="multipart/form-data">
                 {% csrf_token %}
                 <input type="file" name="document" required>

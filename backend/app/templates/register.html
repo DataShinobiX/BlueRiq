@@ -1,15 +1,63 @@
 <!DOCTYPE html>
 <html>
 <head>
+    {% load static %}
     <title>Register</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #1c1c1c;
+            background-image: url("{% static 'login-background.jpg' %}");
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+        .register-container {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            width: 300px;
+        }
+        .register-container h2 {
+            margin-top: 0;
+            text-align: center;
+        }
+        .register-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #0066cc;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .register-container button:hover {
+            background-color: #004999;
+        }
+        .register-container p {
+            text-align: center;
+        }
+        .register-container a {
+            color: #66bfff;
+        }
+    </style>
 </head>
 <body>
-    <h2>Create an Account</h2>
-    <form method="POST">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit">Register</button>
-    </form>
-    <p>Already have an account? <a href="{% url 'login' %}">Log in here</a>.</p>
+    <div class="register-container">
+        <h2>Create an Account</h2>
+        <form method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Register</button>
+        </form>
+        <p>Already have an account? <a href="{% url 'login' %}">Log in here</a>.</p>
+    </div>
 </body>
 </html>

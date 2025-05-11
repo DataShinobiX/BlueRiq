@@ -94,3 +94,12 @@
 2025-05-11 22:56:37,839 - app.utils.nlp_processor - DEBUG - Extracted text from /Users/paritoshsingh/Documents/codes/vs code/blueriq/backend/media/uploads/3_NL_Original - Aanpassing Besluit ziekte en arbeidsongeschiktheid voor onderwijspersoneel primair en voortgezet onderwijs en educatie en beroepsonderwijs (BZA) - BWBR0013028.pdf
 2025-05-11 22:56:38,019 - app.utils.nlp_processor - INFO - Total rules by regex: 7
 2025-05-11 22:56:38,019 - app.utils.nlp_processor - INFO - Total rules by dependency parsing: 0
+2025-05-11 23:18:13,325 - app.utils.nlp_processor - DEBUG - Extracted text from /Users/paritoshsingh/Documents/codes/vs code/blueriq/backend/media/uploads/3_NL_Original - Aanpassing Besluit ziekte en arbeidsongeschiktheid voor onderwijspersoneel primair en voortgezet onderwijs en educatie en beroepsonderwijs (BZA) - BWBR0013028_nSbzutr.pdf
+2025-05-11 23:18:13,504 - app.utils.nlp_processor - INFO - Total rules by regex: 7
+2025-05-11 23:18:13,504 - app.utils.nlp_processor - INFO - Total rules by dependency parsing: 0
+2025-05-11 23:18:20,797 - app.utils.nlp_processor - DEBUG - Extracted text from /Users/paritoshsingh/Documents/codes/vs code/blueriq/backend/media/uploads/3_NL_Original - Aanpassing Besluit ziekte en arbeidsongeschiktheid voor onderwijspersoneel primair en voortgezet onderwijs en educatie en beroepsonderwijs (BZA) - BWBR0013028.pdf
+2025-05-11 23:18:20,970 - app.utils.nlp_processor - INFO - Total rules by regex: 7
+2025-05-11 23:18:20,970 - app.utils.nlp_processor - INFO - Total rules by dependency parsing: 0
+2025-05-11 23:19:15,558 - app.utils.nlp_processor - DEBUG - Extracted text from /Users/paritoshsingh/Documents/codes/vs code/blueriq/backend/media/uploads/3_NL_Original - Aanpassing Besluit ziekte en arbeidsongeschiktheid voor onderwijspersoneel primair en voortgezet onderwijs en educatie en beroepsonderwijs (BZA) - BWBR0013028.pdf
+2025-05-11 23:19:15,735 - app.utils.nlp_processor - INFO - Total rules by regex: 7
+2025-05-11 23:19:15,735 - app.utils.nlp_processor - INFO - Total rules by dependency parsing: 0
