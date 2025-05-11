@@ -77,43 +77,53 @@
             {% if filename %}
                 <h2>Uploaded: {{ filename }}</h2>
 
-                <h3>⚖️ Detected Rules</h3>
-                <ul>
-                    {% for rule in rules %}
-                        <li>{{ rule }}</li>
-                    {% endfor %}
-                </ul>
-
-                <h3>🏷️ Named Entities</h3>
-                {% for label, values in entities.items %}
-                    <strong>{{ label }}</strong>:
+                <form method="POST">
+                    {% csrf_token %}
+                    <input type="hidden" name="filename" value="{{ filename }}">
+                    <h3>⚖️ Detected Rules</h3>
                     <ul>
-                        {% for v in values %}
-                            <li>{{ v }}</li>
+                        {% for rule in rules %}
+                            <li>
+                                <input type="checkbox" name="selected_rules" value="{{ rule }}" checked>
+                                {{ rule }}
+                            </li>
                         {% endfor %}
                     </ul>
-                {% endfor %}
 
-                <h3>📖 Definitions</h3>
-                <ul>
-                    {% for definition in definitions %}
-                        <li>{{ definition }}</li>
-                    {% endfor %}
-                </ul>
+                    <h3>📖 Definitions</h3>
+                    <ul>
+                        {% for definition in definitions %}
+                            <li>
+                                <input type="checkbox" name="selected_definitions" value="{{ definition }}" checked>
+                                {{ definition }}
+                            </li>
+                        {% endfor %}
+                    </ul>
 
-                <h3>⚡ Exceptions</h3>
-                <ul>
-                    {% for exception in exceptions %}
-                        <li>{{ exception }}</li>
-                    {% endfor %}
-                </ul>
+                    <h3>⚡ Exceptions</h3>
+                    <ul>
+                        {% for exception in exceptions %}
+                            <li>
+                                <input type="checkbox" name="selected_exceptions" value="{{ exception }}" checked>
+                                {{ exception }}
+                            </li>
+                        {% endfor %}
+                    </ul>
 
-                <h3>🔗 External Sources</h3>
-                <ul>
-                    {% for source in external_sources %}
-                        <li>{{ source }}</li>
-                    {% endfor %}
-                </ul>
+                    <h3>🔗 External Sources</h3>
+                    <ul>
+                        {% for source in external_sources %}
+                            <li>
+                                <input type="checkbox" name="selected_sources" value="{{ source }}" checked>
+                                {{ source }}
+                            </li>
+                        {% endfor %}
+                    </ul>
+                    <button type="submit">Highlight Selected Text</button>
+                </form>
+
+
+
             {% endif %}
 
             {% if highlighted_pdf_url %}

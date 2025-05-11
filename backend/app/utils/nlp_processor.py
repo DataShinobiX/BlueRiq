@@ -141,7 +141,6 @@ def highlight_pdf(input_pdf_path, output_pdf_path, categorized_data):
         "exceptions": (1, 0.6, 0.6),  # Light Coral
         "definitions": (0.8, 1, 0.8), # Light Green
         "external_sources": (0.8, 0.6, 1), # Plum
-        "entities": (0.5, 0.8, 1),    # Light Blue
     }
 
     # Define priority (lower = higher priority)
@@ -149,8 +148,7 @@ def highlight_pdf(input_pdf_path, output_pdf_path, categorized_data):
         "rules": 1,
         "exceptions": 2,
         "definitions": 3,
-        "external_sources": 4,
-        "entities": 5
+        "external_sources": 4
     }
 
     # Track the highest-priority category for each sentence
@@ -170,11 +168,6 @@ def highlight_pdf(input_pdf_path, output_pdf_path, categorized_data):
     for sentence in categorized_data.get("external_sources", []):
         if sentence not in sentence_categories or priority_map["external_sources"] < priority_map[sentence_categories[sentence]]:
             sentence_categories[sentence] = "external_sources"
-
-    for entity_list in categorized_data.get("entities", {}).values():
-        for sentence in entity_list:
-            if sentence not in sentence_categories:
-                sentence_categories[sentence] = "entities"
 
     # Apply one highlight per sentence based on highest-priority category
     for page in doc:
