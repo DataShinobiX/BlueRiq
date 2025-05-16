@@ -104,6 +104,7 @@
                     {% csrf_token %}
                     <input type="hidden" name="filename" value="{{ filename }}">
                     <h3>⚖️ Detected Rules</h3>
+                    <button type="button" onclick="deselectGroup('selected_rules')">Deselect All</button>
                     <ul>
                         {% for rule in rules %}
                             <li>
@@ -114,6 +115,7 @@
                     </ul>
 
                     <h3>📖 Definitions</h3>
+                    <button type="button" onclick="deselectGroup('selected_definitions')">Deselect All</button>
                     <ul>
                         {% for definition in definitions %}
                             <li>
@@ -124,6 +126,7 @@
                     </ul>
 
                     <h3>⚡ Exceptions</h3>
+                    <button type="button" onclick="deselectGroup('selected_exceptions')">Deselect All</button>
                     <ul>
                         {% for exception in exceptions %}
                             <li>
@@ -134,6 +137,7 @@
                     </ul>
 
                     <h3>🔗 External Sources</h3>
+                    <button type="button" onclick="deselectGroup('selected_sources')">Deselect All</button>
                     <ul>
                         {% for source in external_sources %}
                             <li>
@@ -161,4 +165,10 @@
         </div>
     </div>
 </body>
-</html>
+    <script>
+    function deselectGroup(groupName) {
+        const checkboxes = document.querySelectorAll(`input[name="${groupName}"]`);
+        checkboxes.forEach(cb => cb.checked = false);
+    }
+    </script>
+</html> 
