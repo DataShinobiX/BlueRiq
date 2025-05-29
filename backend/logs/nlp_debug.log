@@ -217,3 +217,93 @@
 2025-05-16 15:40:07,308 - app.utils.nlp_processor - DEBUG - Extracted text from /Users/paritoshsingh/Documents/codes/vs code/blueriq/backend/media/uploads/3_NL_Original - Aanpassing Besluit ziekte en arbeidsongeschiktheid voor onderwijspersoneel primair en voortgezet onderwijs en educatie en beroepsonderwijs (BZA) - BWBR0013028.pdf
 2025-05-16 15:40:07,600 - app.utils.nlp_processor - INFO - Total rules by regex: 7
 2025-05-16 15:40:07,600 - app.utils.nlp_processor - INFO - Total rules by dependency parsing: 0
+2025-05-19 13:15:30,972 - app.utils.nlp_processor - DEBUG - Extracted text from /Users/paritoshsingh/Documents/codes/vs code/blueriq/backend/media/uploads/3_NL_Original - Aanpassing Besluit ziekte en arbeidsongeschiktheid voor onderwijspersoneel primair en voortgezet onderwijs en educatie en beroepsonderwijs (BZA) - BWBR0013028_owbguZm.pdf
+2025-05-19 13:15:31,307 - app.utils.nlp_processor - INFO - Total rules by regex: 7
+2025-05-19 13:15:31,307 - app.utils.nlp_processor - INFO - Total rules by dependency parsing: 0
+2025-05-19 13:17:08,108 - app.utils.nlp_processor - DEBUG - Extracted text from /Users/paritoshsingh/Documents/codes/vs code/blueriq/backend/media/uploads/3_NL_Original - Aanpassing Besluit ziekte en arbeidsongeschiktheid voor onderwijspersoneel primair en voortgezet onderwijs en educatie en beroepsonderwijs (BZA) - BWBR0013028.pdf
+2025-05-19 13:17:08,425 - app.utils.nlp_processor - INFO - Total rules by regex: 7
+2025-05-19 13:17:08,425 - app.utils.nlp_processor - INFO - Total rules by dependency parsing: 0
+2025-05-19 13:17:55,327 - app.utils.nlp_processor - DEBUG - Extracted text from /Users/paritoshsingh/Documents/codes/vs code/blueriq/backend/media/uploads/3_NL_Original - Aanpassing Besluit ziekte en arbeidsongeschiktheid voor onderwijspersoneel primair en voortgezet onderwijs en educatie en beroepsonderwijs (BZA) - BWBR0013028_ZK0EAgw.pdf
+2025-05-19 13:17:55,642 - app.utils.nlp_processor - INFO - Total rules by regex: 7
+2025-05-19 13:17:55,642 - app.utils.nlp_processor - INFO - Total rules by dependency parsing: 0
+2025-05-19 13:18:23,033 - app.utils.nlp_processor - DEBUG - Extracted text from /Users/paritoshsingh/Documents/codes/vs code/blueriq/backend/media/uploads/3_NL_Original - Aanpassing Besluit ziekte en arbeidsongeschiktheid voor onderwijspersoneel primair en voortgezet onderwijs en educatie en beroepsonderwijs (BZA) - BWBR0013028.pdf
+2025-05-19 13:18:23,347 - app.utils.nlp_processor - INFO - Total rules by regex: 7
+2025-05-19 13:18:23,347 - app.utils.nlp_processor - INFO - Total rules by dependency parsing: 0
+2025-05-19 13:21:50,435 - app.utils.nlp_processor - DEBUG - Extracted text from /Users/paritoshsingh/Documents/codes/vs code/blueriq/backend/media/uploads/4_NL_Original - Aanwijzing handelwijze bij beroep op noodweer - BWBR0029133_uVEfIMi.pdf
+2025-05-19 13:21:50,946 - app.utils.nlp_processor - INFO - Total rules by regex: 16
+2025-05-19 13:21:50,947 - app.utils.nlp_processor - INFO - Total rules by dependency parsing: 0
+2025-05-19 13:22:01,282 - app.utils.nlp_processor - DEBUG - Extracted text from /Users/paritoshsingh/Documents/codes/vs code/blueriq/backend/media/uploads/4_NL_Original - Aanwijzing handelwijze bij beroep op noodweer - BWBR0029133.pdf
+2025-05-19 13:22:01,779 - app.utils.nlp_processor - INFO - Total rules by regex: 16
+2025-05-19 13:22:01,780 - app.utils.nlp_processor - INFO - Total rules by dependency parsing: 0
+2025-05-19 13:22:24,981 - app.utils.nlp_processor - DEBUG - Extracted text from /Users/paritoshsingh/Documents/codes/vs code/blueriq/backend/media/uploads/4_NL_Original - Aanwijzing handelwijze bij beroep op noodweer - BWBR0029133_ycsOoUu.pdf
+2025-05-19 13:22:25,481 - app.utils.nlp_processor - INFO - Total rules by regex: 16
+2025-05-19 13:22:25,481 - app.utils.nlp_processor - INFO - Total rules by dependency parsing: 0
+2025-05-19 13:22:42,890 - app.utils.nlp_processor - DEBUG - Extracted text from /Users/paritoshsingh/Documents/codes/vs code/blueriq/backend/media/uploads/3_NL_Original - Aanpassing Besluit ziekte en arbeidsongeschiktheid voor onderwijspersoneel primair en voortgezet onderwijs en educatie en beroepsonderwijs (BZA) - BWBR0013028_DPAU6bh.pdf
+2025-05-19 13:22:43,205 - app.utils.nlp_processor - INFO - Total rules by regex: 7
+2025-05-19 13:22:43,205 - app.utils.nlp_processor - INFO - Total rules by dependency parsing: 0
+2025-05-19 13:24:56,842 - app.utils.nlp_processor - DEBUG - Extracted text from /Users/paritoshsingh/Documents/codes/vs code/blueriq/backend/media/uploads/5_NL_Original Regeling - Algemene wet bestuursrecht - BWBR0005537.pdf
+2025-05-19 13:24:57,865 - app.utils.nlp_processor - INFO - Total rules by regex: 14
+2025-05-19 13:24:57,865 - app.utils.nlp_processor - INFO - Total rules by dependency parsing: 0
+2025-05-19 13:25:22,308 - app.utils.nlp_processor - DEBUG - Extracted text from /Users/paritoshsingh/Documents/codes/vs code/blueriq/backend/media/uploads/5_NL_Original Regeling - Algemene wet bestuursrecht - BWBR0005537.pdf
+2025-05-19 13:25:23,324 - app.utils.nlp_processor - INFO - Total rules by regex: 14
+2025-05-19 13:25:23,324 - app.utils.nlp_processor - INFO - Total rules by dependency parsing: 0
+2025-05-19 18:46:11,886 - app.utils.nlp_processor - DEBUG - Extracted text from /Users/paritoshsingh/Documents/codes/vs code/blueriq/backend/media/uploads/3_NL_Original - Aanpassing Besluit ziekte en arbeidsongeschiktheid voor onderwijspersoneel primair en voortgezet onderwijs en educatie en beroepsonderwijs (BZA) - BWBR0013028_yZZvcYb.pdf
+2025-05-19 18:46:12,150 - app.utils.nlp_processor - INFO - Total rules by regex: 7
+2025-05-19 18:46:12,150 - app.utils.nlp_processor - INFO - Total rules by dependency parsing: 0
+2025-05-21 21:29:06,513 - app.utils.nlp_processor - DEBUG - Extracted text from /Users/paritoshsingh/Documents/codes/vs code/blueriq/backend/media/uploads/3_NL_Original - Aanpassing Besluit ziekte en arbeidsongeschiktheid voor onderwijspersoneel primair en voortgezet onderwijs en educatie en beroepsonderwijs (BZA) - BWBR0013028_90sGqdV.pdf
+2025-05-21 21:29:06,729 - app.utils.nlp_processor - INFO - Total rules by regex: 8
+2025-05-21 21:29:06,729 - app.utils.nlp_processor - INFO - Total rules by dependency parsing: 0
+2025-05-21 21:30:24,631 - app.utils.nlp_processor - DEBUG - Extracted text from /Users/paritoshsingh/Documents/codes/vs code/blueriq/backend/media/uploads/3_NL_Original - Aanpassing Besluit ziekte en arbeidsongeschiktheid voor onderwijspersoneel primair en voortgezet onderwijs en educatie en beroepsonderwijs (BZA) - BWBR0013028.pdf
+2025-05-21 21:30:24,848 - app.utils.nlp_processor - INFO - Total rules by regex: 8
+2025-05-21 21:30:24,848 - app.utils.nlp_processor - INFO - Total rules by dependency parsing: 0
+2025-05-21 21:30:43,305 - app.utils.nlp_processor - DEBUG - Extracted text from /Users/paritoshsingh/Documents/codes/vs code/blueriq/backend/media/uploads/3_NL_Original - Aanpassing Besluit ziekte en arbeidsongeschiktheid voor onderwijspersoneel primair en voortgezet onderwijs en educatie en beroepsonderwijs (BZA) - BWBR0013028_p5DqMak.pdf
+2025-05-21 21:30:43,513 - app.utils.nlp_processor - INFO - Total rules by regex: 8
+2025-05-21 21:30:43,513 - app.utils.nlp_processor - INFO - Total rules by dependency parsing: 0
+2025-05-21 21:31:36,174 - app.utils.nlp_processor - DEBUG - Extracted text from /Users/paritoshsingh/Documents/codes/vs code/blueriq/backend/media/uploads/3_NL_Original - Aanpassing Besluit ziekte en arbeidsongeschiktheid voor onderwijspersoneel primair en voortgezet onderwijs en educatie en beroepsonderwijs (BZA) - BWBR0013028.pdf
+2025-05-21 21:31:36,383 - app.utils.nlp_processor - INFO - Total rules by regex: 8
+2025-05-21 21:31:36,384 - app.utils.nlp_processor - INFO - Total rules by dependency parsing: 0
+2025-05-21 21:41:01,378 - app.utils.nlp_processor - DEBUG - Extracted text from /Users/paritoshsingh/Documents/codes/vs code/blueriq/backend/media/uploads/3_NL_Original - Aanpassing Besluit ziekte en arbeidsongeschiktheid voor onderwijspersoneel primair en voortgezet onderwijs en educatie en beroepsonderwijs (BZA) - BWBR0013028.pdf
+2025-05-21 21:41:01,584 - app.utils.nlp_processor - INFO - Total rules by regex: 8
+2025-05-21 21:41:01,584 - app.utils.nlp_processor - INFO - Total rules by dependency parsing: 0
+2025-05-21 21:45:58,537 - app.utils.nlp_processor - DEBUG - Extracted text from /Users/paritoshsingh/Documents/codes/vs code/blueriq/backend/media/uploads/3_NL_Original - Aanpassing Besluit ziekte en arbeidsongeschiktheid voor onderwijspersoneel primair en voortgezet onderwijs en educatie en beroepsonderwijs (BZA) - BWBR0013028.pdf
+2025-05-21 21:45:58,758 - app.utils.nlp_processor - INFO - Total rules by regex: 8
+2025-05-21 21:45:58,758 - app.utils.nlp_processor - INFO - Total rules by dependency parsing: 0
+2025-05-21 21:48:41,579 - app.utils.nlp_processor - DEBUG - Extracted text from /Users/paritoshsingh/Documents/codes/vs code/blueriq/backend/media/uploads/3_NL_Original - Aanpassing Besluit ziekte en arbeidsongeschiktheid voor onderwijspersoneel primair en voortgezet onderwijs en educatie en beroepsonderwijs (BZA) - BWBR0013028_CzjI4ls.pdf
+2025-05-21 21:48:41,782 - app.utils.nlp_processor - INFO - Total rules by regex: 8
+2025-05-21 21:48:41,783 - app.utils.nlp_processor - INFO - Total rules by dependency parsing: 0
+2025-05-21 21:49:46,164 - app.utils.nlp_processor - DEBUG - Extracted text from /Users/paritoshsingh/Documents/codes/vs code/blueriq/backend/media/uploads/3_NL_Original - Aanpassing Besluit ziekte en arbeidsongeschiktheid voor onderwijspersoneel primair en voortgezet onderwijs en educatie en beroepsonderwijs (BZA) - BWBR0013028.pdf
+2025-05-21 21:49:46,370 - app.utils.nlp_processor - INFO - Total rules by regex: 8
+2025-05-21 21:49:46,370 - app.utils.nlp_processor - INFO - Total rules by dependency parsing: 0
+2025-05-21 21:51:06,989 - app.utils.nlp_processor - DEBUG - Extracted text from /Users/paritoshsingh/Documents/codes/vs code/blueriq/backend/media/uploads/3_NL_Original - Aanpassing Besluit ziekte en arbeidsongeschiktheid voor onderwijspersoneel primair en voortgezet onderwijs en educatie en beroepsonderwijs (BZA) - BWBR0013028_7THk92W.pdf
+2025-05-21 21:51:07,200 - app.utils.nlp_processor - INFO - Total rules by regex: 8
+2025-05-21 21:51:07,200 - app.utils.nlp_processor - INFO - Total rules by dependency parsing: 0
+2025-05-21 21:56:06,702 - app.utils.nlp_processor - DEBUG - Extracted text from /Users/paritoshsingh/Documents/codes/vs code/blueriq/backend/media/uploads/3_NL_Original - Aanpassing Besluit ziekte en arbeidsongeschiktheid voor onderwijspersoneel primair en voortgezet onderwijs en educatie en beroepsonderwijs (BZA) - BWBR0013028_675vjcy.pdf
+2025-05-21 21:56:06,913 - app.utils.nlp_processor - INFO - Total rules by regex: 8
+2025-05-21 21:56:06,913 - app.utils.nlp_processor - INFO - Total rules by dependency parsing: 0
+2025-05-21 21:56:56,878 - app.utils.nlp_processor - DEBUG - Extracted text from /Users/paritoshsingh/Documents/codes/vs code/blueriq/backend/media/uploads/3_NL_Original - Aanpassing Besluit ziekte en arbeidsongeschiktheid voor onderwijspersoneel primair en voortgezet onderwijs en educatie en beroepsonderwijs (BZA) - BWBR0013028.pdf
+2025-05-21 21:56:57,088 - app.utils.nlp_processor - INFO - Total rules by regex: 8
+2025-05-21 21:56:57,088 - app.utils.nlp_processor - INFO - Total rules by dependency parsing: 0
+2025-05-21 21:58:26,881 - app.utils.nlp_processor - DEBUG - Extracted text from /Users/paritoshsingh/Documents/codes/vs code/blueriq/backend/media/uploads/3_NL_Original - Aanpassing Besluit ziekte en arbeidsongeschiktheid voor onderwijspersoneel primair en voortgezet onderwijs en educatie en beroepsonderwijs (BZA) - BWBR0013028_l4exlgQ.pdf
+2025-05-21 21:58:27,098 - app.utils.nlp_processor - INFO - Total rules by regex: 8
+2025-05-21 21:58:27,098 - app.utils.nlp_processor - INFO - Total rules by dependency parsing: 0
+2025-05-21 22:00:21,110 - app.utils.nlp_processor - DEBUG - Extracted text from /Users/paritoshsingh/Documents/codes/vs code/blueriq/backend/media/uploads/3_NL_Original - Aanpassing Besluit ziekte en arbeidsongeschiktheid voor onderwijspersoneel primair en voortgezet onderwijs en educatie en beroepsonderwijs (BZA) - BWBR0013028_bXGGzGq.pdf
+2025-05-21 22:00:21,319 - app.utils.nlp_processor - INFO - Total rules by regex: 8
+2025-05-21 22:00:21,319 - app.utils.nlp_processor - INFO - Total rules by dependency parsing: 0
+2025-05-21 22:01:04,304 - app.utils.nlp_processor - DEBUG - Extracted text from /Users/paritoshsingh/Documents/codes/vs code/blueriq/backend/media/uploads/3_NL_Original - Aanpassing Besluit ziekte en arbeidsongeschiktheid voor onderwijspersoneel primair en voortgezet onderwijs en educatie en beroepsonderwijs (BZA) - BWBR0013028.pdf
+2025-05-21 22:01:04,512 - app.utils.nlp_processor - INFO - Total rules by regex: 8
+2025-05-21 22:01:04,512 - app.utils.nlp_processor - INFO - Total rules by dependency parsing: 0
+2025-05-21 22:01:45,537 - app.utils.nlp_processor - DEBUG - Extracted text from /Users/paritoshsingh/Documents/codes/vs code/blueriq/backend/media/uploads/3_NL_Original - Aanpassing Besluit ziekte en arbeidsongeschiktheid voor onderwijspersoneel primair en voortgezet onderwijs en educatie en beroepsonderwijs (BZA) - BWBR0013028_8jwxrmh.pdf
+2025-05-21 22:01:45,741 - app.utils.nlp_processor - INFO - Total rules by regex: 8
+2025-05-21 22:01:45,741 - app.utils.nlp_processor - INFO - Total rules by dependency parsing: 0
+2025-05-21 22:02:00,816 - app.utils.nlp_processor - DEBUG - Extracted text from /Users/paritoshsingh/Documents/codes/vs code/blueriq/backend/media/uploads/3_NL_Original - Aanpassing Besluit ziekte en arbeidsongeschiktheid voor onderwijspersoneel primair en voortgezet onderwijs en educatie en beroepsonderwijs (BZA) - BWBR0013028.pdf
+2025-05-21 22:02:01,029 - app.utils.nlp_processor - INFO - Total rules by regex: 8
+2025-05-21 22:02:01,029 - app.utils.nlp_processor - INFO - Total rules by dependency parsing: 0
+2025-05-28 12:58:01,800 - app.utils.nlp_processor - DEBUG - Extracted text from /Users/paritoshsingh/Documents/codes/vs code/blueriq/backend/media/uploads/3_NL_Original - Aanpassing Besluit ziekte en arbeidsongeschiktheid voor onderwijspersoneel primair en voortgezet onderwijs en educatie en beroepsonderwijs (BZA) - BWBR0013028_UUNvySf.pdf
+2025-05-28 12:58:02,261 - app.utils.nlp_processor - INFO - Total rules by regex: 8
+2025-05-28 12:58:02,261 - app.utils.nlp_processor - INFO - Total rules by dependency parsing: 0
+2025-05-28 12:58:05,335 - app.utils.nlp_processor - DEBUG - Extracted text from /Users/paritoshsingh/Documents/codes/vs code/blueriq/backend/media/uploads/3_NL_Original - Aanpassing Besluit ziekte en arbeidsongeschiktheid voor onderwijspersoneel primair en voortgezet onderwijs en educatie en beroepsonderwijs (BZA) - BWBR0013028.pdf
+2025-05-28 12:58:05,680 - app.utils.nlp_processor - INFO - Total rules by regex: 8
+2025-05-28 12:58:05,680 - app.utils.nlp_processor - INFO - Total rules by dependency parsing: 0
+2025-05-28 12:59:14,231 - app.utils.nlp_processor - DEBUG - Extracted text from /Users/paritoshsingh/Documents/codes/vs code/blueriq/backend/media/uploads/3_NL_Original - Aanpassing Besluit ziekte en arbeidsongeschiktheid voor onderwijspersoneel primair en voortgezet onderwijs en educatie en beroepsonderwijs (BZA) - BWBR0013028.pdf
+2025-05-28 12:59:14,566 - app.utils.nlp_processor - INFO - Total rules by regex: 8
+2025-05-28 12:59:14,566 - app.utils.nlp_processor - INFO - Total rules by dependency parsing: 0
