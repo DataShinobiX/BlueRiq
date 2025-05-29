@@ -58,22 +58,6 @@ PolicyIQ is an intelligent document analysis tool designed to assist business en
 
 5. Access the application at `http://127.0.0.1:8000/`
 
-## 📦 Folder Structure
-
-```
-blueriq/
-├── backend/
-│   ├── app/
-│   │   ├── models.py
-│   │   ├── views.py
-│   │   ├── utils/
-│   │   │   ├── nlp_processor.py
-│   │   │   └── pattern_config.py
-├── static/
-├── templates/
-├── media/
-```
-
 ## 👥 User Flow
 
 1. Register or log in
