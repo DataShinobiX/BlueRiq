@@ -1,1 +1,6 @@
 venv/
+Data/
+uploads/
+__pycache__/
+media/
+logs/
